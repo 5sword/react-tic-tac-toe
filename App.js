@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Image } from 'react-native';
-import Greeting from "./components/greeting.component";
-import Square from "./components/square.component";
+import {StyleSheet, View} from 'react-native';
+import Game from "./components/game.component";
 
 
 export default class App extends React.Component {
@@ -12,10 +11,7 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Greeting firstName='Jian' lastName='Wu'/>
-        <Square/>
-        <Square/>
-        <Image source={pic} style={{width: 193, height: 110}}/>
+        <Game/>
       </View>
     );
   }
